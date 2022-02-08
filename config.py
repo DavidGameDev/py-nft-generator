@@ -28,9 +28,9 @@ Trait Data: Add your Traits the NFT will be generated from ['<NAME>': <Trait[]>]
 config = {
     "Trait Directory": './art',
     "Output Directory": './output',
-    "Output NFT Name": "hobo_",
-    "Output JSON Name": 'hobo-data',
-    "Generate Amount": 50,
+    "Output NFT Name": "nft_",
+    "Output JSON Name": 'nft-data',
+    "Generate Amount": 20,
     "Image Size": [280, 280],
     "Weighted Distribution": True,
     "Can Generate Empty": ["Hat"],
