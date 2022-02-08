@@ -1,152 +1,135 @@
-hobo-data-2.json
-nft_gen.py
-__pycache__/config.cpython-39.pyc
-__pycache__/data.cpython-39.pyc
-art/setup.psd
-art/test.jpg
-art/background/background_1.png
-art/background/background_2.png
-art/background/background_3.png
-art/background/background_4.png
-art/background/background_5.png
-art/background/background_6.png
-art/background/background_7.png
-art/background/background_8.png
-art/background/background_9.png
-art/background/background_10.png
-art/background/background_11.png
-art/background/background_12.png
-art/body/body_1.png
-art/body/body_2.png
-art/body/body_3.png
-art/body/body_4.png
-art/body/body_5.png
-art/body/body_6.png
-art/body/body_7.png
-art/body/body_8.png
-art/body/body_9.png
-art/body/body_10.png
-art/body/body_11.png
-art/body/body_12.png
-art/body/body_13.png
-art/face/face_1.png
-art/face/face_2.png
-art/face/face_3.png
-art/face/face_4.png
-art/face/face_5.png
-art/face/face_6.png
-art/face/face_7.png
-art/face/face_8.png
-art/face/face_9.png
-art/face/face_10.png
-art/face/face_11.png
-art/face/face_12.png
-art/face/face_13.png
-art/face/face_14.png
-art/hat/hat_1.png
-art/hat/hat_2.png
-art/hat/hat_3.png
-art/hat/hat_4.png
-art/hat/hat_5.png
-art/hat/hat_6.png
-output-2/out_0.png
-output-2/out_1.png
-output-2/out_2.png
-output-2/out_3.png
-output-2/out_4.png
-output-2/out_5.png
-output-2/out_6.png
-output-2/out_7.png
-output-2/out_8.png
-output-2/out_9.png
-output-2/out_10.png
-output-2/out_11.png
-output-2/out_12.png
-output-2/out_13.png
-output-2/out_14.png
-output-2/out_15.png
-output-2/out_16.png
-output-2/out_17.png
-output-2/out_18.png
-output-2/out_19.png
-output-2/out_20.png
-output-2/out_21.png
-output-2/out_22.png
-output-2/out_23.png
-output-2/out_24.png
-output-2/out_25.png
-output-2/out_26.png
-output-2/out_27.png
-output-2/out_28.png
-output-2/out_29.png
-output-2/out_30.png
-output-2/out_31.png
-output-2/out_32.png
-output-2/out_33.png
-output-2/out_34.png
-output-2/out_35.png
-output-2/out_36.png
-output-2/out_37.png
-output-2/out_38.png
-output-2/out_39.png
-output-2/out_40.png
-output-2/out_41.png
-output-2/out_42.png
-output-2/out_43.png
-output-2/out_44.png
-output-2/out_45.png
-output-2/out_46.png
-output-2/out_47.png
-output-2/out_48.png
-output-2/out_49.png
-output/hobo_1.png
-output/hobo_2.png
-output/hobo_3.png
-output/hobo_4.png
-output/hobo_5.png
-output/hobo_6.png
-output/hobo_7.png
-output/hobo_8.png
-output/hobo_9.png
-output/hobo_10.png
-output/hobo_11.png
-output/hobo_12.png
-output/hobo_13.png
-output/hobo_14.png
-output/hobo_15.png
-output/hobo_16.png
-output/hobo_17.png
-output/hobo_18.png
-output/hobo_19.png
-output/hobo_20.png
-output/hobo_21.png
-output/hobo_22.png
-output/hobo_23.png
-output/hobo_24.png
-output/hobo_25.png
-output/hobo_26.png
-output/hobo_27.png
-output/hobo_28.png
-output/hobo_29.png
-output/hobo_30.png
-output/hobo_31.png
-output/hobo_32.png
-output/hobo_33.png
-output/hobo_34.png
-output/hobo_35.png
-output/hobo_36.png
-output/hobo_37.png
-output/hobo_38.png
-output/hobo_39.png
-output/hobo_40.png
-output/hobo_41.png
-output/hobo_42.png
-output/hobo_43.png
-output/hobo_44.png
-output/hobo_45.png
-output/hobo_46.png
-output/hobo_47.png
-output/hobo_48.png
-output/hobo_49.png
-output/hobo_50.png
-output/hobo-data.json
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+
+#local data
+art/
+output/
+old/
