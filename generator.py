@@ -15,11 +15,14 @@ dir = config["Trait Directory"]
 outputDir = config["Output Directory"]
 outputName = config["Output NFT Name"]
 jsonName = config["Output JSON Name"]
+seperateJson = config['Output seperate JSON']
 amountToGen = config["Generate Amount"]
 imageSize = config["Image Size"]
 useWeightedDistribution = config["Weighted Distribution"]
 canBeEmpty = config["Can Generate Empty"]
 traitData = config['Trait Data']
+
+nftType = config['NFT type']
 
 #Declare and Initialize Variables
 traits = traitData.keys()
@@ -140,6 +143,30 @@ def getJsonNft(nft):
 			jsonNft[trait] = getTraitLabel(trait, traitId)
 	return jsonNft
 
+
+'''
+Generate a NFT with all Metadata for JSON export
+@id - <int>ID of the NFT
+@param nft - <Dictionary>{Trait: Trait Index, ...}
+@return <Dictionary>{<Metadata>}
+'''
+def constructJsonMetadata(id, nft):	
+	properties = {
+		'name': f'{outputName}{id}',
+		'description': '',
+		'image': f'<ipfs-link>/{outputName}{id}.png',
+		'attributes': getJsonNft(nft),
+	}
+
+	jsonNft = {
+		'title': 'Asset Metadata',
+		'type': nftType,
+		'properties': properties,
+	}
+
+	return jsonNft
+
+
 #Make sure the Output Directory exists, if not, create one 
 Path(outputDir).mkdir(parents=True, exist_ok=True)
 
@@ -191,6 +218,12 @@ while len([item for item in os.listdir(outputDir)]) < amountToGen:
 		#Output NFT Image
 		render.save(f'{outputDir}/{outputName}{id}.png')
 
+		#Output seperate JSON Files
+		if seperateJson:
+			jsonNft = constructJsonMetadata(id, nft)
+			with open(f'./{outputDir}/{outputName}{id}.json', 'w') as outfile:
+				json.dump(jsonNft, outfile)
+
 		#Increase ID Counter
 		counter += 1
 			
@@ -206,7 +239,11 @@ data = {
 	"nfts": nfts
 }
 
-#Output the JSON File with all Statistics and NFTs Information
+#Output a JSON File with all Statistics and NFTs Information
 with open(f'./{outputDir}/{jsonName}.json', 'w') as outfile:
 	json.dump(data, outfile)
 
+#Output a JSON File with all Statistics
+if seperateJson:
+	with open(f'./{outputDir}/statistics.json', 'w') as outfile:
+		json.dump(statsTraits, outfile)
